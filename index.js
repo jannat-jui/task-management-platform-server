@@ -6,10 +6,12 @@ const port = process.env.PORT || 5000;
 
 //middleware
 app.use(cors({
-    origin: [
-        'http://localhost:5173',
-    ],
-    credentials: true
+  origin: [
+    'http://localhost:5173',
+    // 'https://taskmanagement-44345.web.app',
+    // 'https://taskmanagement-44345.firebaseapp.com'
+  ],
+  credentials: true
 }));
 app.use(express.json());
 
